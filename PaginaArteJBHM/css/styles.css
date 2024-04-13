@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4f6799;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #000000;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #927171;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.artwork {
+    display: flex;          /* Utilizar flexbox */
+    justify-content: center; /* Centrar horizontalmente las imágenes */
+    flex-wrap: wrap;        /* Permitir que las imágenes se envuelvan a la siguiente línea si no caben */
+}
+
+.artwork img {
+    max-width: 200px;       /* Ancho máximo de las imágenes */
+    height: auto;           /* Altura automática para mantener la proporción */
+    margin: 10px;           /* Margen entre las imágenes */
+    object-fit: cover;      /* Ajustar la imagen para cubrir el contenedor */
+}
