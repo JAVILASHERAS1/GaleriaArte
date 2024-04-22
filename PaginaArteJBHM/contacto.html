@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label, input, select, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,12 +30,39 @@
 
     <main>
         <h2>Contacto</h2>
-        <p>Para mas informacion aca los datos de contacto:</p>
+        
+        <!-- Información de contacto -->
+        <p>Para más información, aquí están los datos de contacto:</p>
         <ul>
             <li>Email: Moderno@galeriadearte.cl</li>
             <li>Teléfono: +5695971898</li>
-            <li>Dirección: av zapadores, 485</li>
+            <li>Dirección: Av. Zapadores, 485</li>
         </ul>
+
+        <!-- Formulario de contacto -->
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="tipo_solicitud">Tipo de solicitud:</label>
+            <select id="tipo_solicitud" name="tipo_solicitud" required>
+                <option value="Compra">Compra</option>
+                <option value="Consulta">Consulta</option>
+                <option value="Venta">Venta</option>
+            </select>
+            <br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <br>
+
+            <input type="submit" value="Enviar">
+        </form>
     </main>
 
     <footer>
